@@ -25,3 +25,20 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+#data-generation-code-json
+```
+[
+  '{{repeat(2000)}}',
+  {
+    "label": '{{lorem(1, "words")}}',
+    "partNumber": '{{string("alphaNumeric", 6)}}',
+    "lastServiceDate": '{{date(new Date(2020, 0, 1), new Date(), "YYYY-MM-DD")}}',
+    "serviceCost": '{{floating(45, 999, 2)}}',
+    "partCost": '{{floating(0, (parseFloat(this.serviceCost) - 0.01), 2)}}',
+    "model": '{{integer(2010, 2023)}}',
+    "conceptModel": '{{lorem(1, "words")}}',
+    "reviewedBy": '{{random("Human", "Bot", "NA")}}'
+  }
+]
+```
