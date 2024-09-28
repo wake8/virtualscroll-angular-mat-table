@@ -32,7 +32,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
   '{{repeat(2000)}}',
   {
     "label": '{{lorem(1, "words")}}',
-    "partNumber": '{{string("alphaNumeric", 6)}}',
+    "partNumber": "{{guid().substring(0, 6)}}",
     "lastServiceDate": '{{date(new Date(2020, 0, 1), new Date(), "YYYY-MM-DD")}}',
     "serviceCost": '{{floating(45, 999, 2)}}',
     "partCost": '{{floating(0, (parseFloat(this.serviceCost) - 0.01), 2)}}',
