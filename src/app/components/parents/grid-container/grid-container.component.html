@@ -1,2 +1,11 @@
-<p>grid-container works!</p>
-<app-grid></app-grid>
+<mat-card class="grid-cont-card">
+    <mat-card-title>Angular Material Table with Virtual-scroll</mat-card-title>
+    <mat-card-content>
+        <app-grid [dataSource]="dataSource" [colDefs]="colDefs"/>
+    </mat-card-content>
+    <mat-card-footer class="footer">
+        <section class="card-footer">
+            Credits: LN
+        </section>
+    </mat-card-footer>
+</mat-card>

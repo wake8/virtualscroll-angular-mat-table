@@ -8,3 +8,11 @@ export type GridRow = {
     conceptModel: string,
     reviewedBy: string,
 }
+
+export type ColDef = {
+    label: string;
+    field: string;
+    value : Function;
+    fieldType: string;
+    width?: string; // do not include units
+}
