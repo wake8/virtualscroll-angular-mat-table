@@ -1,3 +1,18 @@
+.container {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 .table {
-    padding: 24px 0;
+    margin: 5px;
+}
+:host ::ng-deep{
+    .mat-mdc-table thead {
+        background-color: #799fc1;
+        tr {
+            color: white;
+            font-weight: bold;
+        }
+    }
+}
+.viewport {
+    height: 600px;
 }
