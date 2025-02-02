@@ -1,7 +1,18 @@
 .grid-cont-card {
-    padding: 24px;
+    // padding: 24px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+    .content {
+        height: 100%;
+        overflow: auto;
+    }
 }
 .card-footer {
     display: flex;
     justify-content: flex-end;
+    background-image: url('../../../../../public/img/footerbg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
